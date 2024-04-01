@@ -38,7 +38,17 @@ Object value = mapList.getValueOfHash(retrievedHashMap, "key");
 
 {English-us}:
 
-MapListMapList is a utility class in Java that provides methods for manipulating a list of HashMap<String, Object>.Featurescreate(HashMap<String, Object> microList): Adds a new map to the list.remove(int position): Removes the map at the specified position from the list.clear(): Removes all maps from the list.NI(): Creates a new instance of MapList.VIETI(MapList Instance): Returns the provided instance.getHash(int position): Gets the map at the specified position from the list.getValueOfHash(HashMap<String, Object> hash, String key): Gets the value associated with the specified key in the provided map.Usage Example// Create an instance of MapList
+MapList is a utility class in Java that provides methods for manipulating a list of HashMap<String, Object>.
+Features
+- create(HashMap<String, Object> microList): Adds a new map to the list.
+- remove(int position): Removes the map at the specified position from the list.
+- clear(): Removes all maps from the list.
+- NI(): Creates a new instance of MapList.
+- VIETI(MapList Instance): Returns the provided instance.
+- getHash(int position): Gets the map at the specified position from the list.
+- getValueOfHash(HashMap<String, Object> hash, String key): Gets the value associated with the specified key in the provided map.
+Usage Example:
+// Create an instance of MapList
 MapList mapList = new MapList();
 
 // Create a HashMap
