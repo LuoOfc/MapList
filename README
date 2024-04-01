@@ -1,3 +1,55 @@
-(English):this Project as maked to Create List
-of HashMap, with String,Object(Key,Value)
-within methods: 
+{Português-br}: 
+
+MapList
+=======
+
+MapList é uma classe utilitária em Java que fornece métodos para manipulação de uma lista de HashMap<String, Object>.
+
+Funcionalidades
+---------------
+
+- create(HashMap<String, Object> microList): Adiciona um novo mapa à lista.
+- remove(int position): Remove o mapa na posição especificada da lista.
+- clear(): Remove todos os mapas da lista.
+- NI(): Cria uma nova instância de MapList.
+- VIETI(MapList Instance): Retorna a instância fornecida.
+- getHash(int position): Obtém o mapa na posição especificada da lista.
+- getValueOfHash(HashMap<String, Object> hash, String key): Obtém o valor associado à chave especificada no mapa fornecido.
+
+Exemplo de Uso
+--------------
+
+```java
+// Criar uma instância de MapList
+MapList mapList = new MapList();
+
+// Criar um HashMap
+HashMap<String, Object> hashMap = new HashMap<>();
+hashMap.put("key", "value");
+
+// Adicionar o HashMap à lista
+mapList.create(hashMap);
+
+// Obter o HashMap na posição 0 da lista
+HashMap<String, Object> retrievedHashMap = mapList.getHash(0);
+
+// Obter o valor associado à chave "key" do HashMap
+Object value = mapList.getValueOfHash(retrievedHashMap, "key");
+
+{English-us}:
+
+MapListMapList is a utility class in Java that provides methods for manipulating a list of HashMap<String, Object>.Featurescreate(HashMap<String, Object> microList): Adds a new map to the list.remove(int position): Removes the map at the specified position from the list.clear(): Removes all maps from the list.NI(): Creates a new instance of MapList.VIETI(MapList Instance): Returns the provided instance.getHash(int position): Gets the map at the specified position from the list.getValueOfHash(HashMap<String, Object> hash, String key): Gets the value associated with the specified key in the provided map.Usage Example// Create an instance of MapList
+MapList mapList = new MapList();
+
+// Create a HashMap
+HashMap<String, Object> hashMap = new HashMap<>();
+hashMap.put("key", "value");
+
+// Add the HashMap to the list
+mapList.create(hashMap);
+
+// Get the HashMap at position 0 from the list
+HashMap<String, Object> retrievedHashMap = mapList.getHash(0);
+
+// Get the value associated with the key "key" from the HashMap
+Object value = mapList.getValueOfHash(retrievedHashMap, "key");
